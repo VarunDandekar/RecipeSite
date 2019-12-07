@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rcpSite';
+  feature:string = 'recipe';
+
+  onNavigate($event:string){
+    this.feature = $event;
+  }
 }
